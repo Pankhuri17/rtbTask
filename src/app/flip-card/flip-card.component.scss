@@ -1,0 +1,78 @@
+.scene {
+  width: 10em;
+  height: 10em;
+  margin: 2em 10em;
+  perspective: 10em;
+
+  .close{
+      display: flex;
+      cursor: pointer;
+      margin-bottom: 5px;
+      .closeBtn{
+          height: 20px;
+          width: 20px;
+      }
+  }
+
+  .cube {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    animation: spinning 8s infinite;
+    transform-style: preserve-3d;
+
+    .face {
+      height: 8em;
+      width: 8em;
+      border-radius: 50%;
+      background-color: #2b265b;
+      position:absolute;
+    //   text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+    }
+  }
+}
+@keyframes spinning {
+    from  { transform: translateZ(-5em) rotateY(0deg);   }
+    to    { transform: translateZ(-5em) rotateY(360deg); }
+  }
+
+.front  { 
+    transform: rotateY(0deg) translateZ(4em);
+    .frontHeader{
+        font-size: 18px;
+        font-weight: 600;
+    }
+    .frontSubheading{
+        font-size: 12px;
+        text-align: center;
+        font-weight: 600;
+    }
+}
+.right  { 
+    transform: rotateY(90deg) translateZ(3em);
+    .rightImg{
+        border-radius: 50%;
+        height: 7em;
+      width: 7em;
+    }
+}
+.left   { 
+    transform: rotateY(-90deg) translateZ(3em);
+    .leftconfig{
+        text-align: center;
+        font-size: 14px;
+        font-weight: 600;
+    }
+}
+.back   {
+    transform: rotateY(180deg) translateZ(4em);
+    .backContent{
+        text-align: center;
+        font-size: 14px;
+        font-weight: 600;
+    }
+}
