@@ -141,4 +141,71 @@ body{
         }
     }
   }
+
+
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: block;
+    .backDropModal {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100vw;
+      height: 100vh;
+      background-color: rgb(0 0 0 / 40%);
+    }
+    .modalContent {
+      background: #fff;
+      width: 30%;
+      height: 60%;
+      border-radius: 5px;
+      box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3), 0px 0px 1px rgba(0, 0, 0, 0.5);
+      .closeBtn {
+        text-align: right;
+        padding: 10px;
+        .closeImg {
+          width: 24px;
+          height: 24px;
+          color: #888888;
+          padding: 10px 25px;
+          cursor: pointer;
+        }
+      }
+      .modalBody {
+        padding: 5px 30px;
+        .heading {
+          // @include heading;
+          font-size: 24px;
+          font-weight: 600;
+          color: #000;
+        }
+        .modalContentSection {
+          padding: 14px 0;
+
+          .header{
+            text-align: center;
+          }
+          .image-section{
+            height: 200px;
+            width: 400px;
+            img{
+              height: 100%;
+              width: 100%;
+            }
+          }
+
+          .scores-section{
+            display: flex;
+            
+            .section{
+              width: 50%;
+              margin: 0 5px;
+            }
+          }
+        }
+      }
+    }
+  }
   

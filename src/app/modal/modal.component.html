@@ -1,0 +1,36 @@
+<div class="modal">
+    <div class="backDropModal">
+      <div class="modalContent">
+        <div class="closeBtn" (click)="onClose()">
+          <button class="btn btn-sm">Close</button>
+        </div>
+        <div class="modalBody">
+          <div class="heading">Match Details</div>
+          <div class="modalContentSection">
+              <div class="header">
+                  <div>{{modalData.front.second}} - {{modalData.front.first}}</div>
+              </div>
+              <div class="header">
+                  {{modalData.front.third}}
+              </div>
+
+              <div class="image-section">
+                  <img [src]="modalData.right.url" alt>
+              </div>
+
+              <div class="scores-section">
+                  <div class="section">
+                      <div class="sec-child-1">Score</div>
+                      <div class="sec-child-2">{{modalData.left.first}} - {{modalData.left.second}}</div>
+                  </div>
+
+                  <div class="section">
+                      <div class="sec-child-1">Overs</div>
+                      <div class="sec-child-2">{{modalData.back.first}}</div>
+                  </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

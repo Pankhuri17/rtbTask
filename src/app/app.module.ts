@@ -11,6 +11,7 @@ import { AdTwoComponent } from './adsComponents/ad-two/ad-two.component';
 import { AdThreeComponent } from './adsComponents/ad-three/ad-three.component';
 import { AdFourComponent } from './adsComponents/ad-four/ad-four.component';
 import { FlipCardComponent } from './flip-card/flip-card.component';
+import { ModalComponent } from './modal/modal.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { FlipCardComponent } from './flip-card/flip-card.component';
     AdTwoComponent,
     AdThreeComponent,
     AdFourComponent,
-    FlipCardComponent
+    FlipCardComponent,
+    ModalComponent
   ],
   imports: [
     BrowserModule,

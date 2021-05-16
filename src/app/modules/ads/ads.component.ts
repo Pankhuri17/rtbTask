@@ -7,6 +7,8 @@ import {AdConfigService} from '../../services/ad-config.service'
   styleUrls: ['./ads.component.scss']
 })
 export class AdsComponent implements OnInit {
+  modalData: any[];
+  opened: boolean;
 
   constructor(private ads: AdConfigService) {
    }
@@ -46,7 +48,7 @@ export class AdsComponent implements OnInit {
 
   loadAd3(){
     let adWrap = document.querySelector('#adContainer3');
-    adWrap.innerHTML = this.ads.getAdConfigHTML3(); 
+    adWrap.setAttribute('style', 'display: block')
     let close = document.querySelector('#close3');
     close.addEventListener('click', function () {
       adWrap.setAttribute('style', 'display: none');
@@ -62,5 +64,14 @@ export class AdsComponent implements OnInit {
     })
   }
 
+  openModal(data){
+    this.modalData = data;
+    this.opened = true;
+  }
 
+  onModalClose(e){
+    if(e){
+      this.opened = false;
+    }
+  }
 }

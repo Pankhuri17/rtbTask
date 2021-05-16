@@ -1,89 +1,107 @@
 .bgImg {
   width: 100%;
+
   img {
     max-width: 100%;
   }
 }
+
 .middleSection {
   .heading {
     position: relative;
     text-align: center;
     margin-top: 5rem;
+
     #adContainer3 {
-        position: absolute;
-        right: 0;
-        top: 0;
-        z-index: 99;
-        background: transparent;
-        width: 400px;
+      display: none;
+      position: fixed;
+      right: 0;
+      top: 70vh;
+      z-index: 99;
+      background: transparent;
+      width: 400px;
     }
 
-    .adContainer{
+    .adContainer {
       width: 100%;
       margin-right: 19px;
     }
+
     .sectionHeading {
-        font-size: 30px;
-        font-weight: bolder;
+      font-size: 30px;
+      font-weight: bolder;
     }
+
     .subHeading {
-        font-size: 16px;
-        padding: 30px 0;
-        line-height: 2;
+      font-size: 16px;
+      padding: 30px 0;
+      line-height: 2;
     }
   }
-  .sectionCard{
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      -ms-grid-column-align: center;
-      position: relative;
-      margin: 0 12rem;
-      .card{
-          border: 1px solid #ccc;
-          width: 50%;
-          padding: 25px;
-          border-radius: 10px;
-          margin: 20px 0px;
-          .cardHeading{
-            font-size: 24px;
-            font-weight: 600;
-            color: #353535;
-          }
-          .cardSubHeadibng{
-            font-size: 14px;
-            font-weight: 600;
-            color: #777777;
-            padding: 20px 0;
-          }
+
+  .sectionCard {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    -ms-grid-column-align: center;
+    position: relative;
+    margin: 0 12rem;
+
+    
+    .card {
+      border: 1px solid #ccc;
+      width: 50%;
+      padding: 25px;
+      border-radius: 10px;
+      margin: 20px 0px;
+      
+      .cardHeading {
+        font-size: 24px;
+        font-weight: 600;
+        color: #353535;
       }
+      
+      .cardSubHeadibng {
+        font-size: 14px;
+        font-weight: 600;
+        color: #777777;
+        padding: 20px 0;
+      }
+    }
   }
 }
 
-.ad-wrap{
+.cardSectionTwo{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.ad-wrap {
   position: relative;
   padding: 30px 0;
-  #adContainer1{
+  display: flex;
+  justify-content: space-between;
+  // gap: 4rem;
+
+  #adContainer1 {
     width: 500px;
-    margin-left: 50px;
-   }
-   
-   #adContainer2{
-     width:350px;
-     position: absolute;
-     bottom: 0;
-     right: 30px;
-   }
-}
+    margin-left: 14rem;
+  }
 
-
-
-#adContainer4{
-  width: 250px;
+  #adContainer2 {
+    width: 350px;
     position: absolute;
-    top: 175px;
-    right: -140px;
+    bottom: 0;
+    right: 20rem;
+  }
 }
 
 
 
-
+#adContainer4 {
+  width: 250px;
+  position: absolute;
+  top: 5px;
+  right: -140px;
+}

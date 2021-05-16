@@ -20,6 +20,7 @@
     position: relative;
     animation: spinning 8s infinite;
     transform-style: preserve-3d;
+    cursor: pointer;
 
     .face {
       height: 8em;
